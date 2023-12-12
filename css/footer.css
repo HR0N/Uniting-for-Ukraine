@@ -1,0 +1,73 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d3041;
+    font-family: "Open Sans", sans-serif;
+    gap: 20px;
+    padding: 20px 200px;
+    margin-top: 50px;
+    color: whitesmoke;
+}
+footer .connection{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+footer .connection div{
+    display: flex;
+    gap: 6px;
+}
+footer .social_networks{
+    display: flex;
+    gap: 20px;
+    font-size: 2em;
+}
+footer .social_networks i{
+    display: flex;
+    align-items: center;
+}
+
+
+/*                                                       . . : : MEDIA : : . .*/
+
+@media screen and (max-width: 1441px) {
+    footer{
+        padding: 20px 100px;
+    }
+
+}
+@media screen and (max-width: 1025px) {
+    footer{
+        padding: 20px 100px;
+    }
+
+}
+@media screen and (max-width: 769px) {
+    footer{
+        padding: 20px 80px;
+    }
+
+}
+@media screen and (max-width: 541px) {  /*  for Safai (Surface Duo) */
+    footer{
+        padding: 20px 60px;
+    }
+
+}
+@media screen and (max-width: 426px) {
+    footer{
+        padding: 20px 30px;
+    }
+
+}
+@media screen and (max-width: 376px) {
+
+}
+@media screen and (max-width: 321px) {
+    footer{
+        padding: 20px 20px;
+    }
+
+}
+
+/*                                                       . . : : Dynamic Classes : : . .*/

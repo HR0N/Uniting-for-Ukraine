@@ -1,0 +1,121 @@
+.callback_form__wrapper{
+    position: relative;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 60px 0;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.callback_form__wrapper .bg_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.callback_form__wrapper .bg_img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+    transform: scale(1);
+    transition: 1.2s;
+}
+
+.callback_form{
+    display: flex;
+    flex-direction: column;
+    width: clamp(310px, 60%, 600px);
+    margin: 0 auto 0;
+    padding: 20px 20px 20px;
+    border: 1px solid lightgrey;
+    border-radius: .5rem;
+    box-shadow: 0 0 8px dimgrey;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+    transition: 1s;
+}
+.callback_form:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.callback_form__wrapper:hover .bg_img img{
+    transform: scale(1.02);
+}
+.callback_form .title{
+    font-size: 2em;
+    margin-bottom: 12px;
+}
+.callback_form .description{
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+    gap: 30px 10px;
+    margin: 20px auto 0;
+}
+form input{}
+form .input{
+    background-color: transparent;
+    padding: 12px 14px;
+    border:  1px solid #2d3041;
+    border-radius: .25rem;
+    outline: none;
+}
+form .input::placeholder {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+form .name{}
+form .surname{}
+form .email{}
+form .phone{}
+form .text{
+    grid-column: span 2;
+    min-width: 100%;
+    resize: vertical;
+    min-height: 100px;
+}
+form .buttons{
+    display: flex;
+    justify-content: flex-end;
+    grid-column: span 2;
+}
+
+/*                                                       . . : : MEDIA : : . .*/
+
+@media screen and (max-width: 1441px) {
+
+}
+@media screen and (max-width: 1025px) {
+
+}
+@media screen and (max-width: 769px) {
+    form{
+    grid-template-columns: 1fr;
+}
+    form .text, form .buttons{
+        grid-column: span 1;
+    }
+
+}
+@media screen and (max-width: 541px) {  /*  for Safai (Surface Duo) */
+
+}
+@media screen and (max-width: 426px) {
+
+}
+@media screen and (max-width: 376px) {
+
+}
+@media screen and (max-width: 321px) {.callback_form{
+    width: 100%;
+    padding: 20px 10px 10px;
+}
+
+}
+
+/*                                                       . . : : Dynamic Classes : : . .*/
